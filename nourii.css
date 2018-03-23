@@ -1,0 +1,417 @@
+/* 測試環境 */
+/* .container {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.top-img{
+	margin-bottom: 40px;
+}
+.summary-container {
+	margin-bottom: 20px;
+}
+.row {
+	margin-left: -10px;
+    margin-right: -10px;
+}
+img {
+	width: 100%;
+} */
+
+/*全站字型*/
+body *{
+	font-family: 'Noto Sans', Microsoft JhengHei, sans-serif !important;}
+.fa {
+	font: normal normal normal 14px/1 FontAwesome !important;}
+/*header上方文字banner*/
+.navbar-wrapper:before{
+	font-family:'Noto Sans',  Microsoft JhengHei, san-serif;
+	content: "會員首購隨行杯商品現折2百＋免運";
+	font-size: 14px;
+	color: #fff;
+	background-color: #37D676;
+	display:inline-block;
+	width:100%;
+	height:25px;
+	text-align:center;
+	padding-top:3px;}
+/*footer下方版權宣告*/
+#footer:after{
+	font-family:'Noto Sans',  Microsoft JhengHei, san-serif;
+	content: "COPYRIGHT © 2016 NOURII CO., LTD. ALL RIGHTS RESERVED";
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #222;
+	display:inline-block;
+	width:100%;
+	height:25px;
+	text-align:center;
+	padding-top:4px;}
+/* header fixed */
+.navbar-wrapper {
+	position:fixed;
+	width:100%;
+	top:0px;
+	z-index: 100;
+	background-color:#fff;
+	height:76px}
+#footer{
+	position:absolute;
+	bottom: 0px;
+	display: table;
+	background-color:#111;
+	min-height: 100px;
+	color: #FFFFFF;}
+.credit-cards, .badges {
+	display: none;
+}
+/*  Logo  */
+/*Logo位置移除預設值*/
+.navbar {
+	padding-top:0;
+	padding-bottom:0;
+	border:none;
+}
+/*Logo 尺寸*/
+.navbar-header-wrapper{
+	width:15%;}
+.navbar-header .logo-image{
+	height:40px;}
+.mobile-logo a {
+	position: absolute;
+	top: 0;
+}	
+/*  header 通用樣式 */
+/*文字選單按鈕設計*/
+@media (max-width: 991px){
+.navbar-header-wrapper .container {
+	padding: 0;
+}
+.navbar-menu {
+	text-align: left;
+}
+}
+.navbar-menu li a{
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #999 ;
+	-webkit-transition: color 0.5s;
+	transition: color 0.5s;}
+.navbar-menu > ul > li > a.active{
+	display: block;
+    padding-bottom: 10px;
+    margin-top: 10px;
+	font-size:14px;
+	color:#999}
+.navbar-menu > ul > li > a.active:hover{
+	color:rgba(102,102,102,1)}	
+.navbar-menu > ul > li > a{
+	font-size:14px}
+/*加高可點擊高度*/
+.nav-dropdown-toggle{
+	display: block;
+    padding-bottom: 10px;
+    margin-top: 12px;} 
+.nav-dropdown-menu{
+	padding: 0;
+	margin-top:12px}
+/* hover變色 */
+.navbar-menu li:hover > a{
+	color:#111;}	
+/* hover變背景 */
+.navbar-menu .nav-dropdown-menu li:hover{
+	background: rgba(17, 17, 17, 0.05);
+	border-left: 3px solid #111;}
+#fixed-menu-container {
+	background-color:#fff;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    z-index: 999;
+}
+#fixed-menu-container .menu-button{
+	border:none;}
+/*隱藏選單文字*/
+.menu-words{
+	display:none;}
+/*  footer 通用樣式  */
+/* 選單撐滿 */
+#footer .container .row > div:first-child{
+	width:100%;
+}		
+/* 選單置中 */
+#footer .container .row div:first-child ul{
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding: 30px 0;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	line-height: 1.8em;}
+	
+#footer .container .row ul li{
+	display: inline-block;
+	padding-right: 35px;
+	padding-left: 35px;
+	margin:0;
+	border-right: 1px solid #777;
+	border-left: 1px solid transparent;
+	font-size: 0.85em;
+	letter-spacing: 2px;
+	font-weight: 300;
+	line-height: 1.8em;}
+
+#footer .container .row ul li:last-child{
+	border-right: none;}
+
+@media (max-width: 767px){
+#footer .container .row ul li{
+	display: block;
+	border-right:none;
+	padding-bottom:10px}	
+}
+#footer a {
+	color: #999;
+}
+#footer a:hover {
+	color: #FFF;
+}
+
+/* 登入頁面通用樣式 */
+.large-message.ng-scope{
+	background:#fff}
+.links-container a{
+	color:#777}
+.links-container a:hover{
+	color:#fff;
+	background-color:#777}
+.btn-color-primary:hover {
+	background-color:#777;
+	border:#777}
+
+/* 明細頁設計通用樣式 */
+/*分享按鈕*/
+.share-box{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%)}
+a.at-icon-wrapper.at-share-btn.at-svc-wechat, a.at-icon-wrapper.at-share-btn.at-svc-sinaweibo{
+	display:none}
+/*按鈕通用樣式*/
+.btn{
+	border-radius: 0;
+	}
+.btn-fff{
+	border-color:#fff;
+	color:#fff}	
+.btn:hover {
+	background-color:#777;
+	color:#ffffff}	
+/*隱藏預設產品敘述文字*/
+h2#sec0{
+	display:none}	
+
+/*RWD用：清除(增加)預設值*/	
+@media (max-width: 767px){
+.navbar-header .logo-image{
+	height:35px;}
+#footer .row{
+	height:150px
+}
+#footer .container .row div:first-child ul{
+	padding:15px 0}
+#footer:after{
+	content: "© 2017 NOURII CO., LTD. ALL RIGHTS RESERVED";}	
+}
+
+/* RWD開始 */
+@media only screen and (max-width: 479px){
+.yield-wrapper{
+	margin-top: 0px;}
+.body-wrapper{
+	margin-bottom:195px;
+	margin-top:0px}
+.custom-page.ng-isolate-scope{
+	margin-top:-43px}
+}
+
+@media only screen and (min-width:480px) and (max-width: 767px){
+.yield-wrapper{
+	margin-top:98px;}
+.body-wrapper{
+	margin-bottom:195px;
+	margin-top:160px}
+.custom-page.ng-isolate-scope{
+	margin-top:-53px}
+}
+
+/*768px-1199px共用*/
+@media only screen and (min-width: 768px) and (max-width: 1199px){
+.left-panel-button.menu-button{
+	display:block;}
+.yield-wrapper{
+	margin-top:98px;}
+.body-wrapper{
+	margin-bottom:190px;
+	margin-top:160px}
+.custom-page.ng-isolate-scope{
+	margin-top:-53px}
+#footer .row{
+	height:145px}
+.addthis_button_whatsapp.at300b, .at4-icon.line-image{
+	display:none}
+}
+
+@media only screen and (min-width: 1200px) {
+.nav-dropdown-menu{
+	margin-top:-3px}
+.yield-wrapper{
+	margin-top:68px;}
+.body-wrapper{
+	margin-bottom:200px;
+	margin-top:150px}
+.custom-page.ng-isolate-scope{
+	margin-top:-75px}
+#footer .row{
+	height:155px}
+}
+
+/*明細頁reset*/
+p {margin: 0;}
+.dph1, .dph2, .dph3, .dpp, .dpul, .dpli{
+	margin:10px 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	letter-spacing:normal;
+	font: inherit;
+	vertical-align: baseline;
+	font-size: 110%;
+	}
+.dphr{
+	margin:20px 0
+	}	
+.img-caption {
+position: relative;
+}
+.img-caption img {
+display: block;
+width: 100%;
+height: auto;
+}
+.caption-text {
+display: block;
+position: absolute;
+width: 100%;
+z-index: 2;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.text-vertical{
+	writing-mode: vertical-rl}
+.dp-button{
+	text-align: center;
+	margin: 20px 0}
+.position-rel{
+	position:relative}	
+.position-abs{
+	position: absolute;}	
+.text-right{
+	text-align:right}	
+.img-center{
+	display:block;
+    margin-left:auto;
+    margin-right:auto;}	
+.overflow-auto{
+	overflow:auto;}
+@media only screen and (min-width: 768px){	
+.div-ver-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);}}	
+/*--no Y scrollbar--*/
+div.overflow-auto {
+    overflow-y: hidden;}
+/*--editor區域開頭--*/
+div.col-md-9 > hr {
+	margin-bottom:0}
+
+/* 共用版位 */
+/* custom spacing */
+@media only screen and (min-width: 320px){.pt-xs-0{padding-top:0}.pb-xs-0{padding-bottom:0}.pr-xs-0{padding-right:0}.pl-xs-0{padding-left:0}.px-xs-0{padding-right:0;padding-left:0}.py-xs-0{padding-top:0;padding-bottom:0}.p-xs-0{padding:0}.pt-xs-10{padding-top:10px}.pb-xs-10{padding-bottom:10px}.pr-xs-10{padding-right:10px}.pl-xs-10{padding-left:10px}.px-xs-10{padding-right:10px;padding-left:10px}.py-xs-10{padding-top:10px;padding-bottom:10px}.p-xs-10{padding:10px}.pt-xs-15{padding-top:15px}.pb-xs-15{padding-bottom:15px}.pr-xs-15{padding-right:15px}.pl-xs-15{padding-left:15px}.px-xs-15{padding-right:15px;padding-left:15px}.py-xs-15{padding-top:15px;padding-bottom:15px}.p-xs-15{padding:15px}.pt-xs-20{padding-top:20px}.pb-xs-20{padding-bottom:20px}.pr-xs-20{padding-right:20px}.pl-xs-20{padding-left:20px}.px-xs-20{padding-right:20px;padding-left:20px}.py-xs-20{padding-top:20px;padding-bottom:20px}.pt-xs-30{padding-top:30px}.pb-xs-30{padding-bottom:30px}.pr-xs-30{padding-right:30px}.pl-xs-30{padding-left:30px}.px-xs-30{padding-right:30px;padding-left:30px}.py-xs-30{padding-top:30px;padding-bottom:30px}.mt-xs-0{margin-top:0}.mb-xs-0{margin-bottom:0}.mr-xs-0{margin-right:0}.ml-xs-0{margin-left:0}.mx-xs-0{margin-right:0;margin-left:0}.my-xs-0{margin-top:0;margin-bottom:0}.m-xs-0{margin:0}.mt-xs-10{margin-top:10px}.mb-xs-10{margin-bottom:10px}.mr-xs-10{margin-right:10px}.ml-xs-10{margin-left:10px}.mx-xs-10{margin-right:10px;margin-left:10px}.my-xs-10{margin-top:10px;margin-bottom:10px}.m-xs-10{margin:10px}.mt-xs-15{margin-top:15px}.mb-xs-15{margin-bottom:15px}.mr-xs-15{margin-right:15px}.ml-xs-15{margin-left:15px}.mx-xs-15{margin-right:15px;margin-left:15px}.my-xs-15{margin-top:15px;margin-bottom:15px}.m-xs-15{margin:15px}.mt-xs-20{margin-top:20px}.mb-xs-20{margin-bottom:20px}.mr-xs-20{margin-right:20px}.ml-xs-20{margin-left:20px}.mx-xs-20{margin-right:20px;margin-left:20px}.my-xs-20{margin-top:20px;margin-bottom:20px}.mt-xs-30{margin-top:30px}.mb-xs-30{margin-bottom:30px}.mr-xs-30{margin-right:30px}.ml-xs-30{margin-left:30px}.mx-xs-30{margin-right:30px;margin-left:30px}.my-xs-30{margin-top:30px;margin-bottom:30px}} @media only screen and (min-width: 768px){.pt-sm-0{padding-top:0}.pb-sm-0{padding-bottom:0}.pr-sm-0{padding-right:0}.pl-sm-0{padding-left:0}.px-sm-0{padding-right:0;padding-left:0}.py-sm-0{padding-top:0;padding-bottom:0}.p-sm-0{padding:0}.pt-sm-10{padding-top:10px}.pb-sm-10{padding-bottom:10px}.pr-sm-10{padding-right:10px}.pl-sm-10{padding-left:10px}.px-sm-10{padding-right:10px;padding-left:10px}.py-sm-10{padding-top:10px;padding-bottom:10px}.p-sm-10{padding:10px}.pt-sm-15{padding-top:15px}.pb-sm-15{padding-bottom:15px}.pr-sm-15{padding-right:15px}.pl-sm-15{padding-left:15px}.px-sm-15{padding-right:15px;padding-left:15px}.py-sm-15{padding-top:15px;padding-bottom:15px}.p-sm-15{padding:15px}.pt-sm-20{padding-top:20px}.pb-sm-20{padding-bottom:20px}.pr-sm-20{padding-right:20px}.pl-sm-20{padding-left:20px}.px-sm-20{padding-right:20px;padding-left:20px}.py-sm-20{padding-top:20px;padding-bottom:20px}.pt-sm-30{padding-top:30px}.pb-sm-30{padding-bottom:30px}.pr-sm-30{padding-right:30px}.pl-sm-30{padding-left:30px}.px-sm-30{padding-right:30px;padding-left:30px}.py-sm-30{padding-top:30px;padding-bottom:30px}.mt-sm-0{margin-top:0}.mb-sm-0{margin-bottom:0}.mr-sm-0{margin-right:0}.ml-sm-0{margin-left:0}.mx-sm-0{margin-right:0;margin-left:0}.my-sm-0{margin-top:0;margin-bottom:0}.m-sm-0{margin:0}.mt-sm-10{margin-top:10px}.mb-sm-10{margin-bottom:10px}.mr-sm-10{margin-right:10px}.ml-sm-10{margin-left:10px}.mx-sm-10{margin-right:10px;margin-left:10px}.my-sm-10{margin-top:10px;margin-bottom:10px}.m-sm-10{margin:10px}.mt-sm-15{margin-top:15px}.mb-sm-15{margin-bottom:15px}.mr-sm-15{margin-right:15px}.ml-sm-15{margin-left:15px}.mx-sm-15{margin-right:15px;margin-left:15px}.my-sm-15{margin-top:15px;margin-bottom:15px}.m-sm-15{margin:15px}.mt-sm-20{margin-top:20px}.mb-sm-20{margin-bottom:20px}.mr-sm-20{margin-right:20px}.ml-sm-20{margin-left:20px}.mx-sm-20{margin-right:20px;margin-left:20px}.my-sm-20{margin-top:20px;margin-bottom:20px}.mt-sm-30{margin-top:30px}.mb-sm-30{margin-bottom:30px}.mr-sm-30{margin-right:30px}.ml-sm-30{margin-left:30px}.mx-sm-30{margin-right:30px;margin-left:30px}.my-sm-30{margin-top:30px;margin-bottom:30px}} @media only screen and (min-width: 992px){.pt-md-0{padding-top:0}.pb-md-0{padding-bottom:0}.pr-md-0{padding-right:0}.pl-md-0{padding-left:0}.px-md-0{padding-right:0;padding-left:0}.py-md-0{padding-top:0;padding-bottom:0}.p-md-0{padding:0}.pt-md-10{padding-top:10px}.pb-md-10{padding-bottom:10px}.pr-md-10{padding-right:10px}.pl-md-10{padding-left:10px}.px-md-10{padding-right:10px;padding-left:10px}.py-md-10{padding-top:10px;padding-bottom:10px}.p-md-10{padding:10px}.pt-md-15{padding-top:15px}.pb-md-15{padding-bottom:15px}.pr-md-15{padding-right:15px}.pl-md-15{padding-left:15px}.px-md-15{padding-right:15px;padding-left:15px}.py-md-15{padding-top:15px;padding-bottom:15px}.p-md-15{padding:15px}.pt-md-20{padding-top:20px}.pb-md-20{padding-bottom:20px}.pr-md-20{padding-right:20px}.pl-md-20{padding-left:20px}.px-md-20{padding-right:20px;padding-left:20px}.py-md-20{padding-top:20px;padding-bottom:20px}.pt-md-30{padding-top:30px}.pb-md-30{padding-bottom:30px}.pr-md-30{padding-right:30px}.pl-md-30{padding-left:30px}.px-md-30{padding-right:30px;padding-left:30px}.py-md-30{padding-top:30px;padding-bottom:30px}.mt-md-0{margin-top:0}.mb-md-0{margin-bottom:0}.mr-md-0{margin-right:0}.ml-md-0{margin-left:0}.mx-md-0{margin-right:0;margin-left:0}.my-md-0{margin-top:0;margin-bottom:0}.m-md-0{margin:0}.mt-md-10{margin-top:10px}.mb-md-10{margin-bottom:10px}.mr-md-10{margin-right:10px}.ml-md-10{margin-left:10px}.mx-md-10{margin-right:10px;margin-left:10px}.my-md-10{margin-top:10px;margin-bottom:10px}.m-md-10{margin:10px}.mt-md-15{margin-top:15px}.mb-md-15{margin-bottom:15px}.mr-md-15{margin-right:15px}.ml-md-15{margin-left:15px}.mx-md-15{margin-right:15px;margin-left:15px}.my-md-15{margin-top:15px;margin-bottom:15px}.m-md-15{margin:15px}.mt-md-20{margin-top:20px}.mb-md-20{margin-bottom:20px}.mr-md-20{margin-right:20px}.ml-md-20{margin-left:20px}.mx-md-20{margin-right:20px;margin-left:20px}.my-md-20{margin-top:20px;margin-bottom:20px}.mt-md-30{margin-top:30px}.mb-md-30{margin-bottom:30px}.mr-md-30{margin-right:30px}.ml-md-30{margin-left:30px}.mx-md-30{margin-right:30px;margin-left:30px}.my-md-30{margin-top:30px;margin-bottom:30px}} @media only screen and (min-width: 1200px){.pt-lg-0{padding-top:0}.pb-lg-0{padding-bottom:0}.pr-lg-0{padding-right:0}.pl-lg-0{padding-left:0}.px-lg-0{padding-right:0;padding-left:0}.py-lg-0{padding-top:0;padding-bottom:0}.p-lg-0{padding:0}.pt-lg-10{padding-top:10px}.pb-lg-10{padding-bottom:10px}.pr-lg-10{padding-right:10px}.pl-lg-10{padding-left:10px}.px-lg-10{padding-right:10px;padding-left:10px}.py-lg-10{padding-top:10px;padding-bottom:10px}.p-lg-10{padding:10px}.pt-lg-15{padding-top:15px}.pb-lg-15{padding-bottom:15px}.pr-lg-15{padding-right:15px}.pl-lg-15{padding-left:15px}.px-lg-15{padding-right:15px;padding-left:15px}.py-lg-15{padding-top:15px;padding-bottom:15px}.p-lg-15{padding:15px}.pt-lg-20{padding-top:20px}.pb-lg-20{padding-bottom:20px}.pr-lg-20{padding-right:20px}.pl-lg-20{padding-left:20px}.px-lg-20{padding-right:20px;padding-left:20px}.py-lg-20{padding-top:20px;padding-bottom:20px}.pt-lg-30{padding-top:30px}.pb-lg-30{padding-bottom:30px}.pr-lg-30{padding-right:30px}.pl-lg-30{padding-left:30px}.px-lg-30{padding-right:30px;padding-left:30px}.py-lg-30{padding-top:30px;padding-bottom:30px}.mt-lg-0{margin-top:0}.mb-lg-0{margin-bottom:0}.mr-lg-0{margin-right:0}.ml-lg-0{margin-left:0}.mx-lg-0{margin-right:0;margin-left:0}.my-lg-0{margin-top:0;margin-bottom:0}.m-lg-0{margin:0}.mt-lg-10{margin-top:10px}.mb-lg-10{margin-bottom:10px}.mr-lg-10{margin-right:10px}.ml-lg-10{margin-left:10px}.mx-lg-10{margin-right:10px;margin-left:10px}.my-lg-10{margin-top:10px;margin-bottom:10px}.m-lg-10{margin:10px}.mt-lg-15{margin-top:15px}.mb-lg-15{margin-bottom:15px}.mr-lg-15{margin-right:15px}.ml-lg-15{margin-left:15px}.mx-lg-15{margin-right:15px;margin-left:15px}.my-lg-15{margin-top:15px;margin-bottom:15px}.m-lg-15{margin:15px}.mt-lg-20{margin-top:20px}.mb-lg-20{margin-bottom:20px}.mr-lg-20{margin-right:20px}.ml-lg-20{margin-left:20px}.mx-lg-20{margin-right:20px;margin-left:20px}.my-lg-20{margin-top:20px;margin-bottom:20px}.mt-lg-30{margin-top:30px}.mb-lg-30{margin-bottom:30px}.mr-lg-30{margin-right:30px}.ml-lg-30{margin-left:30px}.mx-lg-30{margin-right:30px;margin-left:30px}.my-lg-30{margin-top:30px;margin-bottom:30px}}
+/*茶葉頁面_膠囊&茶杯特點*/
+div.capsule-feature-des{background-color:#ececeb}
+div.thermo-feature-des{background-color:#4e4e4e; color:#ffffff}
+div.pro-feature-wrapper tr{
+	display:block} 
+div.pro-feature-wrapper tr:nth-last-child(n+2) {
+	margin-bottom:10px}
+div.thermo-capsule-wrapper p {
+	font-size:95%}
+@media only screen and (min-width: 768px) {
+.capsule-feature-des-2{
+	padding-left:12%}}
+/*茶葉頁面_沖泡方式*/
+div.brew-step-wrapper {
+	background-color:#e5e4e2;}
+@media only screen and (max-width: 767px) {
+div.brew-step p{
+	text-align:left;}	}
+@media only screen and (min-width: 768px) {
+div.brew-step {
+	min-height:50px}	}
+/*證書頁*/
+div.cert-sec-border {
+    border-top:1px solid #777;
+    border-bottom: 1px solid #777}
+/*退換貨須知*/
+td {
+    vertical-align:top}
+/*----茶杯----*/
+#thermo-mug div.sec1 h2 {
+    color:#777}
+    /*sec2*/
+#thermo-mug div.sec2{
+    background:url("https://nourii.co/image/cart/tumbler/sec2-background.jpg");
+    padding-top:8.5%;
+    padding-bottom: 8.5%}
+#thermo-mug div.sec2 > h2 {
+    font-size: 124%;}
+#thermo-mug img.thermo-feature-icon{
+    display:block;
+    margin:0 auto}      
+/*sec4*/
+#thermo-mug div.sec4 > div{
+    position:relative;
+    overflow:auto;
+    clear:both}
+#thermo-mug div.sec4-sec1 {
+    background-color: #e5e5e5;}
+#thermo-mug div.sec4-sec2 {
+    background-color: #727071;
+    color:#fff}
+#thermo-mug div.sec4-sec3 {
+    background-color: #ededed;}
+@media only screen and (min-width: 375px){
+#thermo-mug div.sec1 > h2{
+    font-size:140%;
+    margin-bottom:20px} }
+@media only screen and (min-width: 768px){
+/*sec3*/
+#thermo-mug div.sec3 > div{
+    position: absolute;
+    right: 10%;
+    top: 10%;}}
+/* Video */
+.video-container {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 56.25%;}
+.video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;}
